@@ -1,0 +1,210 @@
+@font-face {
+	font-family:'MessinaSansWeb';
+	src: url('../font/MessinaSansWeb-Regular.eot'); /* IE9 Compat Modes */
+	src: url('../font/MessinaSansWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../font/MessinaSansWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../font/MessinaSansWeb-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+  font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB04;
+}
+
+body {
+  background: linear-gradient(to right,  #fff36e 50%, #ece8e7 50%);
+  font-family: 'MessinaSansWeb';
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  display: flex;  
+}
+
+.block {
+  padding:2%;
+  font-size: 2.4pc;
+}
+
+.left-block {
+  width: 50%;
+  background: #fff36e;
+  position: relative;
+  color: #2e0092;
+}
+
+.right-block {
+  width: 50%;
+  background:  #ece8e7;
+  position: relative;
+  color: #ff1d25
+}
+
+.language-right-text {
+  padding-left:1%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  text-orientation: sideways;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 0.9pc;
+}
+
+.language-right-text:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #ff1d25
+}
+
+.paragraph {
+  margin-bottom: -2%;
+}
+.img {
+  position: relative;
+  height: 2pc;
+  left: -0.7pc;
+  top: 0.2pc;
+}
+.spanishimage {
+  position: relative;
+  height: 2pc;
+  left: -1.3pc;
+  top: 0.2pc;
+}
+.centered-text {
+  margin-top: 0%;
+  border-top: 0%;
+  padding-top:0%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  color: #ffff3e;
+}
+a:hover {
+  color: #d9d4d2;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  p {
+    margin-top:0%;
+  }
+  .top-text{
+    margin-top:-1%;
+  }
+  .arrow {
+    padding-top:2.1%;
+  }
+
+  .down-paragraph {
+    margin-top:1.4%;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  p {
+    margin-top:1%;
+  }
+  .top-text{
+    margin-top:-1%;
+  }
+  .arrow {
+    padding-top:2.1%;
+  }
+
+  .down-paragraph {
+    margin-top:2.2%;
+  }
+  .block {
+  font-size: 3.7pc;
+  }
+  .language-right-text {  
+  font-size: 1.2pc;
+  }
+  .img {
+    position: relative;
+    height: 3pc;
+    left: -0.9pc;
+    top: 0.2pc;
+  }
+  .spanishimage {
+    position: relative;
+    height: 3pc;
+    left: -2pc;
+    top: 0.2pc;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background: transparent;
+  }
+  .box{
+    margin: 0%;
+    flex-wrap: wrap;
+  }
+  .block {
+    padding:0%;
+    width: 100%;
+    font-size: 1.4pc;
+  }
+  p {
+    padding-left: 5%;
+    padding-right: 9%;
+  }
+
+  .paragraph {
+    margin-bottom: -8%;
+    /* line-height: 99%; */
+  }
+  .emails {
+    padding-top:4%;
+  }
+
+  .networks{
+    padding-top:4%;
+  }
+  .language-right-text {  
+    background: none;
+    position: fixed;
+    padding-left:2%;
+    color: #2e0092;
+  }
+  .second-block-intro {
+    margin-bottom: 0%;
+  }
+  .img {
+    position: relative;
+    height: 1.4pc;
+    left: -0.3pc;
+    top: 0.2pc;
+  }
+  .spanishimage {
+    position: relative;
+    height: 1.4pc;
+    left: -0.7pc;
+    top: 0.2pc;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .paragraph {
+    margin-bottom: -4%;
+    line-height: auto;
+  }
+  .arrow {
+    padding-top:4%;
+  }
+}
